@@ -1,0 +1,70 @@
+.container {
+  max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.navbar {
+  background-color: white;
+  min-height: 80px;
+}
+
+#hero {
+  margin-top: 80px;
+  background-image: url("https://dam-prod.media.mit.edu/thumb/2017/08/08/crispr-020.jpg.1400x1400.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+#hero-content {
+  z-index: 99;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 70px;
+  grid-row-gap: 70px;
+}
+
+@media (max-width: 1200px) {
+  .users-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .users-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+section > h2 {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 100px;
+}
