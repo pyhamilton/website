@@ -14,8 +14,11 @@
   min-height: 80px;
 }
 
-#hero {
+.content {
   margin-top: 80px;
+}
+
+#hero {
   background-image: url("https://dam-prod.media.mit.edu/thumb/2017/08/08/crispr-020.jpg.1400x1400.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -67,4 +70,47 @@ section > h2 {
   text-align: center;
   font-weight: 500;
   padding-top: 100px;
+}
+
+/* blog */
+.head {
+  text-align: center;
+  padding: 80px 0;
+}
+.head > h1 {
+  font-weight: 600;
+  font-size: 4em;
+}
+
+.posts {
+  padding-bottom: 80px;
+}
+
+.posts .post {
+  padding: 60px 0;
+}
+
+a.post {
+  text-decoration: none;
+  color: inherit;
+}
+a.post:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.posts .post:not(:last-of-type) {
+  border-bottom: 1px solid lightgray;
+}
+
+.blog-post {
+  padding-top: 40px;
+}
+
+.blog-post h1 {
+  font-weight: 600;
+}
+
+.blog-text {
+  text-align: justify;
 }

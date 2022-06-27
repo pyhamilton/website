@@ -1,0 +1,47 @@
+---
+permalink: /blog
+layout: default
+---
+
+<section class="head">
+  <h1>PyHamilton Blog</h1>
+</section>
+
+<section class="posts container">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}" class="row post align-items-center">
+    <div class="col-md-6">
+      <p>{% for category in post.categories %} {{ category }} {% endfor %}</p>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.excerpt }}</p>
+      <p>{{ post.author }} &middot; {{ post.date | date_to_long_string }}</p>
+    </div>
+
+    <div class="col-md-6">
+      <img
+        src="https://dam-prod.media.mit.edu/thumb/2017/08/08/crispr-020.jpg.1400x1400.jpg"
+        alt=""
+      />
+    </div>
+  </a>
+  {% endfor %}
+</section>
+
+<div class="py-5 bg-black text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Get started today.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          dolores numquam distinctio perferendis ab, esse quasi aut incidunt
+          soluta, officia amet? Quod sit sequi accusantium aliquam omnis dolores
+          quae veniam?
+        </p>
+      </div>
+      <div class="col-md-4 d-flex align-items-center justify-content-end">
+        <div class="btn btn-light btn-lg ml-auto">GitHub</div>
+      </div>
+    </div>
+  </div>
+</div>
